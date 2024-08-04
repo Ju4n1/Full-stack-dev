@@ -1,0 +1,260 @@
+h1{
+    background-color: blue;
+    color: yellow;
+    font-family:'Lucida Sans';
+    padding: 10px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2{
+     margin: 5px;
+     width:400px;
+     font-family:Arial;
+     background-color:lightsteelblue;
+    
+}
+
+
+.caja{
+   width: 1000px;
+   height:510px;
+   display:flex;
+    
+}
+
+.cajita1{
+    background-image: url(../images/perfil2.jpg);
+    
+    width:250px;
+    height:385px;
+    padding: 3px;
+    margin: 30px;
+    opacity: .85;
+    background-size: cover;
+    background-repeat:  no-repeat;
+}
+
+.cajita2{
+    background-image: url(../images/perfil3.jpg);
+    width:250px;
+    height:385px;
+    padding: 3px;
+    margin: 30px;
+    opacity: .85;
+    background-size: cover;
+    background-repeat:  no-repeat;
+    
+}
+
+.cajita3{
+    background-image: url(../images/perfil4.jpg);
+    width:250px;
+    height:385px;
+    padding: 3px;
+    margin: 30px;
+    opacity: .85;
+    background-size: cover;
+    background-repeat:no-repeat;
+
+}
+.cajita4{
+    background-image: url(../images/pigüé.png);
+    width:750px;
+    height:385px;
+    padding: 3px;
+    margin: 30px;
+    opacity: .85;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+.cajita5{
+    background-image: url(../images/pigué2.webp);
+    width:750px;
+    height:385px;
+    padding: 3px;
+    margin: 30px;
+    opacity: .85;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+
+.imagen{
+    width:300px;
+    height:450px;
+    padding: 3px;
+    margin: 30px;
+    opacity: .85;
+}
+
+.cajita1:hover{
+    border-style: dashed;
+    border-color: blue;
+    opacity:initial;
+    margin: 3px;
+    padding: 3px;
+    transition: 0.3s;
+    }
+
+.cajita2:hover{
+    border-style: dashed;
+    border-color: blue;
+    opacity:initial;
+    margin: 3px;
+    padding: 3px;
+    transition: 0.3s;
+    
+}
+
+.cajita3:hover{
+    border-style: dashed;
+    border-color: blue;
+    opacity:initial;
+    margin: 3px;
+    padding: 3px;
+    transition: 0.3s;
+   
+}
+
+.caja3{
+       width: 1200px;
+       height:680px;
+       display:flex;
+}
+
+.cajita6{
+        background-image: url(../images/asado.jpg);
+        width:350px;
+        height:600px;
+        padding: 3px;
+        margin: 30px;
+        background-size: cover;
+        background-repeat:no-repeat;
+}
+
+.cajita7{
+    background-image: url(../images/campo2.jpg);
+    width:350px;
+    height:600px;
+    padding: 3px;
+    margin: 30px;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+.cajita8{
+    background-image: url(../images/asado2.jpeg);
+    width:350px;
+    height:600px;
+    padding: 3px;
+    margin: 30px;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+.caja4{
+       width: 1200px;
+       height:680px;
+       display:flex;
+}
+
+.cajita9{
+        background-image: url(../images/boca.jpg);
+        width:350px;
+        height:600px;
+        padding: 3px;
+        margin: 30px;
+        background-size: cover;
+        background-repeat:no-repeat;
+}
+
+.cajita10{
+    background-image: url(../images/boca3.jpg);
+    width:350px;
+    height:600px;
+    padding: 3px;
+    margin: 30px;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+.cajita11{
+    background-image: url(../images/boca2.jpeg);
+    width:350px;
+    height:600px;
+    padding: 3px;
+    margin: 30px;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+.txt{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color:blue;
+    width:250px;
+    height:385px;
+    position:absolute;
+    bottom:-100px;
+    background-color: transparent;
+    opacity: 0;
+    
+}
+
+.txt:hover{
+   opacity: inherit;
+}
+.parrafo{
+    background-color:lightseagreen;
+    width: 800px;}
+
+    
+body{
+    background-image: url(../images/fondo.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.logo{
+    width: 50px;
+    }
+
+.tecnologias{
+             width:100px;
+             padding: 10px;
+             margin: 30px;
+             display: inline-block;
+             background-color:lightcyan;
+             background-size: cover;
+        
+        }
+
+.fotos{
+            width:450px;
+            height: 650px;
+            padding: 10px;
+            margin: 30px;
+            display: inline-block;
+            background-color:lightcyan;
+            background-size: cover;
+       
+       }
+
+
+
+.escribir{
+            width:100px;
+            position: fixed;
+            bottom: 20px;
+            right: 10px;
+            opacity: 0.65;
+        
+}
+.escribir:hover{
+               transition: 0.3;
+               width: 200px;
+               opacity:initial;
+}
