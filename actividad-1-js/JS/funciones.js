@@ -29,7 +29,74 @@ function sumaAux(){
 function minuto(horas){
         return horas*60;}
 
+/* Cascaon para button */
 function minutosaux(){
     horas=parseInt(prompt("ingrese horas"));
-    console.log(horas+" son equivalentes a "+minuto(horas)+" minutos");
+    console.log(horas+" horas son equivalentes a "+minuto(horas)+" minutos");
+}
+
+function parimpar(numero){
+    salida=""; 
+    if(numero % 2==0)
+        salida="par";
+    else salida="impar"
+return salida;}
+
+/* Casacaron para button*/
+function parimparAux(){
+        numero=parseInt(prompt("Ingrese numero: "));
+        console.log(numero+" es "+parimpar(numero));
+}
+
+function comparar(a,b){
+      salida=1;  
+      if(a<b)
+        salida=b;
+      else salda=a; 
+return salida;}
+
+/* Cascaron para button*/
+function compararAux(){
+        a=parseInt(prompt("Ingrese primer número a comparar"));
+        b=parseInt(prompt("Ingrese segundo número a comparar"));
+        console.log(comparar(a,b)+" es mayor")
+}
+
+function area(base,altura){
+    return base*altura;}
+
+/* Cascaron para button */
+function areaAux(){
+        base=parseInt(prompt("Ingrese base base"));
+        altura=parseInt(prompt("Ingrese altura altura"));
+        console.log("el area del rectangulo de "+base+" x "+altura+" es "+area(base,altura));
+    }
+
+function iva(precio){
+        iv=precio*0.21;
+return precio+iv;}
+
+/* Cascaron...*/
+function ivaAux(){
+        precio=parseInt(prompt("Ingrese precio"));
+        console.log("el pecio final con iva incluido: "+iva(precio));
+}
+
+function mayor(){
+    let salida=0;
+    let array=[30,2];
+    if(array[0] > array[1])
+        salida=array[0];
+    else salida=array[1];
+    console.log("entre "+array[0]+" y "+array[1]+" el mayor es: "+salida);
+}
+
+function gradosFar(grados){
+        return((grados*(9/5))+32);
+    }
+
+/* Cascaron...*/
+function gradosFarAux(){
+        let grados=parseInt(prompt("ingrese gracos celsius: "));
+        console.log(grados+" equivale a "+gradosFar(grados)+" farenheit");
 }
