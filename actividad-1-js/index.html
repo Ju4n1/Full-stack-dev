@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="JS/funciones.js"></script>
+    <title>Ejercicios de JavaScript</title>
+    
+</head>
+
+<body>
+    <div class="container">
+        <h1>Ejercicios de JavaScript</h1>
+        <div class="intro">
+            <h2>Introducción</h2>
+            <p>¡Hola, muy buenas! A continuación, te presento una serie de ejercicios para que practiques y para que desarrolles tu lógica de programación.</p>
+            <p>Estos ejercicios abarcan:</p>
+            <ul>
+                <li>Análisis del problema y razonamiento lógico.</li>
+                <li>Manejo de funciones.</li>
+                <li>Uso de bloques <code>if</code> para la toma de decisiones.</li>
+                <li>Manipulación y recorrido de arrays utilizando el método <code>forEach</code> de los mismos.</li>
+                <li>Trabajo con arrays de objetos, enfocándonos en sus propiedades.</li>
+            </ul>
+            <p>Muchos de los ejercicios están basados en una situación realista para que puedas aplicar el conocimiento de forma
+                práctica y relevante. Encontrarás un botón junto a cada ejercicio; al hacer clic en él, deberás ejecutar
+                tu código, es decir, la funcionalidad a implementar.</p>
+            <p>Te recomiendo leer atentamente cada consigna y pensar en la mejor forma de resolver el problema antes de
+                comenzar a escribir código.</p>
+            <p>Existe una sola forma de aprender a programar, y es programando.<br>¡Comencemos!</p>
+        </div>
+
+        <!-- Ejercicio #01 -->
+        <div class="exercise">
+            <h2>Ejercicio #01: Mensaje de bienvenida</h2>
+            <p>Crea una función que reciba un nombre como parámetro y retorne un mensaje de bienvenida.</p>
+            <button onclick="saludoAux()">Ejecutar</button>
+            <div class="level">
+                
+                Nivel
+                <span class="level-low"></span>
+                <span class="level-low"></span>
+                <span class="level-low"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #02 -->
+        <div class="exercise">
+            <h2>Ejercicio #02: Suma de dos números</h2>
+            <p>Crea una función que reciba dos números como parámetros y retorne su suma.</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-low"></span>
+                <span class="level-low"></span>
+                <span class="level-low"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #03 -->
+        <div class="exercise">
+            <h2>Ejercicio #03: Conversión de horas a minutos</h2>
+            <p>Escribe una función que convierta una cantidad de horas a minutos.</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-low"></span>
+                <span class="level-low"></span>
+                <span class="level-low"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #04 -->
+        <div class="exercise">
+            <h2>Ejercicio #04: Verificación de número par o impar</h2>
+            <p>Escribe una función que reciba un número y retorne si es par o impar.</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-low"></span>
+                <span class="level-low"></span>
+                <span class="level-low"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #05 -->
+        <div class="exercise">
+            <h2>Ejercicio #05: Comparación de dos números</h2>
+            <p>Crea una función que reciba dos números y retorne cuál es mayor, o si son iguales.</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-low"></span>
+                <span class="level-low"></span>
+                <span class="level-low"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #06 -->
+        <div class="exercise">
+            <h2>Ejercicio #06: Calculadora de área de un rectángulo</h2>
+            <p>Crea una función que reciba el largo y el ancho de un rectángulo y retorne su área.</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-low"></span>
+                <span class="level-low"></span>
+                <span class="level-low"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #07 -->
+        <div class="exercise">
+            <h2>Ejercicio #07: Calculadora de IVA</h2>
+            <p>Crea una función que reciba un precio y un porcentaje de IVA, y retorne el precio con IVA incluido.</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-low"></span>
+                <span class="level-low"></span>
+                <span class="level-low"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #08 -->
+        <div class="exercise">
+            <h2>Ejercicio #08: Comparación de dos números con if</h2>
+            <p>Dado un array con dos números, usa un bloque if para determinar cuál es mayor o si son iguales.</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-low"></span>
+                <span class="level-low"></span>
+                <span class="level-medium"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #09 -->
+        <div class="exercise">
+            <h2>Ejercicio #09: Conversión de grados Celsius a Fahrenheit</h2>
+            <p>Escribe una función que convierta una temperatura dada en grados Celsius a Fahrenheit.</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-low"></span>
+                <span class="level-low"></span>
+                <span class="level-medium"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #10 -->
+        <div class="exercise">
+            <h2>Ejercicio #10: Determinar si una cadena está vacía</h2>
+            <p>Escribe una función que reciba una cadena de texto y retorne si está vacía o no.</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-low"></span>
+                <span class="level-medium"></span>
+                <span class="level-medium"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #11 -->
+        <div class="exercise">
+            <h2>Ejercicio #11: Promedio de un array de números</h2>
+            <p>Escribe una función que reciba un array de números y retorne el promedio.</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-medium"></span>
+                <span class="level-medium"></span>
+                <span class="level-medium"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #12 -->
+        <div class="exercise">
+            <h2>Ejercicio #12: Gestión de un Estacionamiento</h2>
+            <p>Dado un array de objetos que representan autos en un estacionamiento (marca, modelo,
+                placa), verifique si un auto específico está en el estacionamiento usando forEach.</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-medium"></span>
+                <span class="level-medium"></span>
+                <span class="level-medium"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #13 -->
+        <div class="exercise">
+            <h2>Ejercicio #13: Registro de visitantes</h2>
+            <p>Dado un array de objetos que representan visitantes a un evento, usa forEach para imprimir un mensaje de
+                bienvenida solo a los que no han asistido antes (usa una propiedad yaAsistio).</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-medium"></span>
+                <span class="level-medium"></span>
+                <span class="level-medium"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #14 -->
+        <div class="exercise">
+            <h2>Ejercicio #14: Sorteo de premios</h2>
+            <p>Crea un sistema que, dado un array de objetos con los nombres de los participantes y sus números de
+                ticket, determine si un número específico ganó un premio.</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-medium"></span>
+                <span class="level-medium"></span>
+                <span class="level-medium"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #15 -->
+        <div class="exercise">
+            <h2>Ejercicio #15: Verificación de correos electrónicos</h2>
+            <p>Tienes un array de objetos que contienen información de usuarios, incluyendo sus correos electrónicos.
+                Usa forEach y un bloque if para verificar si un correo electrónico ya está registrado.</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-medium"></span>
+                <span class="level-medium"></span>
+                <span class="level-medium"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #16 -->
+        <div class="exercise">
+            <h2>Ejercicio #16: Control de temperatura</h2>
+            <p>Crea un sistema que reciba una lista de temperaturas de varios días y use un bloque if para determinar si
+                hubo algún día con temperaturas bajo cero.</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-medium"></span>
+                <span class="level-medium"></span>
+                <span class="level-medium"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #17 -->
+        <div class="exercise">
+            <h2>Ejercicio #17: Verificación de edad</h2>
+            <p>Tienes un array de objetos que representan personas con sus edades. Usa un bloque if para verificar si
+                todos son mayores de edad.</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-medium"></span>
+                <span class="level-medium"></span>
+                <span class="level-medium"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #18 -->
+        <div class="exercise">
+            <h2>Ejercicio #18: Inventario de tienda</h2>
+            <p>Tienes un array de objetos donde cada objeto representa un producto con propiedades como nombre, precio,
+                y cantidad. Usa forEach para recorrer el inventario y mostrar un mensaje cuando algún producto esté por
+                debajo de cierta cantidad.</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-medium"></span>
+                <span class="level-medium"></span>
+                <span class="level-medium"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #19 -->
+        <div class="exercise">
+            <h2>Ejercicio #19: Lista de compras</h2>
+            <p>Crea un array con objetos que representen artículos de una lista de compras (nombre, cantidad, comprado).
+                Usa forEach para marcar los artículos como comprados.</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-medium"></span>
+                <span class="level-medium"></span>
+                <span class="level-medium"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #20 -->
+        <div class="exercise">
+            <h2>Ejercicio #20: Sistema de votación</h2>
+            <p>Dado un array de objetos con candidatos y sus votos, usa forEach para determinar qué candidato recibió la
+                mayor cantidad de votos.</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-medium"></span>
+                <span class="level-medium"></span>
+                <span class="level-hard"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #21 -->
+        <div class="exercise">
+            <h2>Ejercicio #21: Calculadora de descuentos</h2>
+            <p>Dado un array de objetos que representan productos en un carrito de compras, usa forEach para aplicar un
+                descuento a los productos que superen cierto precio.</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-medium"></span>
+                <span class="level-medium"></span>
+                <span class="level-hard"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #22 -->
+        <div class="exercise">
+            <h2>Ejercicio #22: Control de stock</h2>
+            <p>Tienes un array de productos en una tienda. Usa forEach para reducir la cantidad en stock de un producto
+                cada vez que se realiza una venta, y usa un bloque if para avisar si el stock está bajo.</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-medium"></span>
+                <span class="level-hard"></span>
+                <span class="level-hard"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #23 -->
+        <div class="exercise">
+            <h2>Ejercicio #23: Filtro de productos</h2>
+            <p>Dado un array de objetos que representan productos con propiedades como nombre, precio, y disponible, usa
+                forEach para filtrar solo los productos disponibles.</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-medium"></span>
+                <span class="level-hard"></span>
+                <span class="level-hard"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio 24 -->
+        <div class="exercise">
+            <h2>Ejercicio 24: Generador de contraseñas</h2>
+            <p>Crea una función que genere una contraseña aleatoria de 8 caracteres.</p>
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-hard"></span>
+                <span class="level-hard"></span>
+                <span class="level-hard"></span>
+            </div>
+        </div>
+
+        <!-- Ejercicio #25 -->
+        <div class="exercise">
+            <h2>Ejercicio #25: Encuesta de preferencias</h2>
+            <p>Crea un array de objetos que representen encuestas con preguntas y respuestas. Usa forEach para contar
+                cuántas veces cada respuesta fue seleccionada.</p>
+
+            <button>Ejecutar</button>
+            <div class="level">
+                Nivel
+                <span class="level-hard"></span>
+                <span class="level-hard"></span>
+                <span class="level-hard"></span>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
