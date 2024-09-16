@@ -131,3 +131,83 @@ function promAux(){
     }
     console.log("es: "+promedioArray(array));
 }
+
+/*  ejercicios con objetos */
+
+let  autos=[{
+    marca:"Fiat",
+    modelo:"147",
+    placa:123,
+},
+
+{
+    marca:"Ford",
+    modelo:"F-100",
+    placa:456,
+},
+
+{
+    marca:"Chevrolet",
+    modelo:"Camaro",
+    placa:789,
+},
+
+{
+    marca:"Citroen",
+    modelo:"2cv",
+    placa:100,
+},
+
+]
+
+
+function estacionado(){
+        
+        salida=false;
+        patente= parseInt(prompt("ingrese patente"));
+        
+        autos.forEach(element => {
+                  if(patente==element.placa)
+                    salida=true;
+                       
+                    
+                   
+                     
+                     
+                     
+                                
+        });
+      
+  console.log("el auto "+patente+" esta? "+salida);}
+
+let personas=[
+  
+             {
+              nombre:"Pedro",
+              yaAsistio:true,
+              dni:123,
+             },
+
+             
+             {
+                nombre:"Juan",
+                yaAsistio:false,
+                dni:321,
+               },
+
+               
+             {
+                nombre:"Matias",
+                yaAsistio:true,
+                dni:456,
+               },
+
+]
+
+function saludoYaAsistio(){
+
+        personas.forEach(element => {
+                if(element.yaAsistio==true)
+                    saludo(element.nombre);
+        });    
+}
