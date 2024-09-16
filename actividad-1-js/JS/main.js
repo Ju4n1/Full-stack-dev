@@ -100,3 +100,34 @@ function gradosFarAux(){
         let grados=parseInt(prompt("ingrese gracos celsius: "));
         console.log(grados+" equivale a "+gradosFar(grados)+" farenheit");
 }
+
+function cadena(s){
+    
+    salida=(s.length==0);
+
+return salida;}
+
+function cadenaAux(){
+      s=prompt("ingrese cadena");
+      
+      console.log("la  cadena esta vacia? "+cadena(s));}
+
+
+function promedioArray(a){
+        salida=0;
+        prom=0;
+        for(i=0; i<a.length;i++){
+            salida=salida+a[i];
+        prom=i+1;}
+return salida/prom;}
+
+
+function promAux(){
+    let array= [1,2,3,4,5,6];
+    
+    console.log("el promedio del arreglo: [ ");
+    for(i=0;i<array.length;i++){
+        console.log(array[i]+"");
+    }
+    console.log("es: "+promedioArray(array));
+}
