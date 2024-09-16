@@ -211,3 +211,72 @@ function saludoYaAsistio(){
                     saludo(element.nombre);
         });    
 }
+
+let participantes = [
+
+    {nombre:"Pedro",
+     numero:1,},
+
+    {nombre:"Roberto",
+     numero:2,},
+    
+    {nombre:"Matias",
+     numero:3,},
+
+    {nombre:"Juan",
+     numero:4,}
+
+]
+
+function sorteo(gandor){
+
+        i=0;
+        esta=false;
+        while(i<participantes.length&&!esta){
+              if(participantes[i].numero==ganador)
+                 esta=true;
+        i++;}
+
+        if(esta)
+            console.log("el ganador del sorteo es :"+participantes[i-1].nombre);
+        else console.log("el numero no se vendio");
+}
+
+function sorteoAux(){
+         ganador=parseInt(prompt("ingrese numero ganador"));
+         sorteo(ganador);
+}
+
+let usuarios=[
+    {nombre:"Juan",
+     correo:"Juan@gmail.com" ,  
+    },
+    {nombre:"Pedro",
+    correo:"Pedro@gmail.com" ,  
+       },
+       
+    {nombre:"Matias",
+    correo:"Matia@gmail.com" ,  
+    },
+
+    {nombre:"Roberto",        
+    correo:"Robero@gmail.com" ,  
+    },
+]
+
+
+function checkMail(mail){
+    esta=false;     
+    usuarios.forEach(element => {
+        if(element.correo==mail)
+            esta=true;
+        
+    });
+    console.log("el mail "+mail+" esta registrado? .... "+esta);
+}
+
+function checkMailAux(){
+    mail=prompt("ingese mail a verificar ");
+    checkMail(mail);
+
+}
