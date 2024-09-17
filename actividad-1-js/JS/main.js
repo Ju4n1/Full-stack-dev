@@ -280,3 +280,121 @@ function checkMailAux(){
     checkMail(mail);
 
 }
+
+function temperatura(){
+    temperaturas=[10,-2,4,-5,20,30,-1,0];
+    dias=0;
+    temperaturas.forEach(element => {
+        if(element < 0)
+            dias++;
+        console.log(element);
+    });
+    console.log("Días bajo 0: "+dias);}
+
+
+let edades=[
+    
+    {nombre:"juan",
+     edad:32,   
+    },
+    {nombre:"Pedro",
+        edad:3,   
+       },
+
+    {nombre:"Matias",
+    edad:18,   
+    },
+    {nombre:"Marcos",
+    edad:2,   
+       },
+    
+]
+
+function mayor(){
+        edades.forEach(element => {
+            if(element.edad>=18)
+                console.log(element.nombre+" es mayor de edad tiene "+element.edad+" años");
+            else console.log(element.nombre+" es menor de edad tiene "+element.edad+" años");
+        });
+}
+
+let articulos=[
+    
+    {nombre:"fideos",
+     precio:"$1000",
+     stock:10,
+     comprado:false,
+    },
+    
+    {nombre:"arroz",
+     precio:"$3000",
+     stock:100,
+     comprado:false,
+    },
+
+    {nombre:"salsa tomate",
+    precio:"$4000",
+    stock:50,
+    comprado:false,
+    },
+
+    {nombre:"azucar",
+    precio:"$5000",
+    stock:0,
+    comprado:false,
+    },
+]
+
+function controStock(st){
+        articulos.forEach(element => {
+            if(element.stock<=st)
+                console.log("el stock de "+element.nombre+" debe reponerse");
+        });
+}
+
+function controlAux(){
+        st=parseInt(prompt("ingrese stoc minimo"));
+        controStock(st);
+}
+
+function lista(){
+        articulos.forEach(element => {
+            element.comparar=true;
+            console.log("compre: "+element.nombre);
+        });
+}
+
+let candidatos=[
+
+    {nombre:"Miriam Bregman",
+     votos:2,
+    },
+    
+    {nombre:"Javier Milei",
+    votos:20000,
+       },
+
+       
+    {nombre:"Patricia Bullrich",
+    votos:14,
+       },
+
+    
+    {nombre:"Sergio Massa",
+    votos:19999,
+    },
+
+    
+    {nombre:"Juan Schiaretti",
+    votos:6,
+       },
+]
+
+function scrutinio(){
+     ganador=candidatos[0];
+     candidatos.forEach(element => {
+        console.log(element.nombre+": "+element.votos);
+        if(element.votos>ganador.votos)
+            ganador=element;
+     });
+console.log("el ganador es :"+ganador.nombre);}
