@@ -107,12 +107,13 @@ function cadena(s){
 
 return salida;}
 
+/* Cascaron */
 function cadenaAux(){
       s=prompt("ingrese cadena");
       
       console.log("la  cadena esta vacia? "+cadena(s));}
 
-
+/* Promedio arreglo */
 function promedioArray(a){
         salida=0;
         prom=0;
@@ -121,7 +122,7 @@ function promedioArray(a){
         prom=i+1;}
 return salida/prom;}
 
-
+/* Cascarón */
 function promAux(){
     let array= [1,2,3,4,5,6];
     
@@ -132,7 +133,7 @@ function promAux(){
     console.log("es: "+promedioArray(array));
 }
 
-/*  ejercicios con objetos */
+/* Auto/marca/model/placa */
 
 let  autos=[{
     marca:"Fiat",
@@ -160,7 +161,7 @@ let  autos=[{
 
 ]
 
-
+/* Patentes estacionamiento */
 function estacionado(){
         
         salida=false;
@@ -170,16 +171,12 @@ function estacionado(){
                   if(patente==element.placa)
                     salida=true;
                        
-                    
-                   
-                     
-                     
-                     
-                                
-        });
+           });
       
   console.log("el auto "+patente+" esta? "+salida);}
 
+
+  /* Nombre/asistio/DNI */
 let personas=[
   
              {
@@ -204,6 +201,7 @@ let personas=[
 
 ]
 
+/* Control asistensias */
 function saludoYaAsistio(){
 
         personas.forEach(element => {
@@ -211,7 +209,7 @@ function saludoYaAsistio(){
                     saludo(element.nombre);
         });    
 }
-
+/* Nombre/numero sorteo */
 let participantes = [
 
     {nombre:"Pedro",
@@ -228,6 +226,7 @@ let participantes = [
 
 ]
 
+/* Checkear numero ganador */
 function sorteo(gandor){
 
         i=0;
@@ -242,11 +241,12 @@ function sorteo(gandor){
         else console.log("el numero no se vendio");
 }
 
+/* Cascaron */
 function sorteoAux(){
          ganador=parseInt(prompt("ingrese numero ganador"));
          sorteo(ganador);
 }
-
+/* Usuarios/mail */
 let usuarios=[
     {nombre:"Juan",
      correo:"Juan@gmail.com" ,  
@@ -264,7 +264,7 @@ let usuarios=[
     },
 ]
 
-
+/* Checkeo mail registrado */
 function checkMail(mail){
     esta=false;     
     usuarios.forEach(element => {
@@ -275,12 +275,14 @@ function checkMail(mail){
     console.log("el mail "+mail+" esta registrado? .... "+esta);
 }
 
+/* cascaron */
 function checkMailAux(){
     mail=prompt("ingese mail a verificar ");
     checkMail(mail);
 
 }
 
+/* Snsa tempraturas bajo 0 */
 function temperatura(){
     temperaturas=[10,-2,4,-5,20,30,-1,0];
     dias=0;
@@ -291,7 +293,7 @@ function temperatura(){
     });
     console.log("Días bajo 0: "+dias);}
 
-
+/* Nombre/edad */
 let edades=[
     
     {nombre:"juan",
@@ -310,6 +312,7 @@ let edades=[
     
 ]
 
+/* Mostrar mayores de edad */
 function mayor(){
         edades.forEach(element => {
             if(element.edad>=18)
@@ -318,6 +321,7 @@ function mayor(){
         });
 }
 
+/* Articlosnombre/precio/stock/comprado */
 let articulos=[
     
     {nombre:"fideos",
@@ -349,6 +353,7 @@ let articulos=[
     },
 ]
 
+/* Control stock predefinido */
 function controStock(st){
         articulos.forEach(element => {
             if(element.stock<=st)
@@ -356,11 +361,13 @@ function controStock(st){
         });
 }
 
+/* Cascaron */
 function controlAux(){
         st=parseInt(prompt("ingrese stoc minimo"));
         controStock(st);
 }
 
+/* Marcar para comprar enlista */
 function lista(){
         articulos.forEach(element => {
             element.comparar=true;
@@ -368,6 +375,7 @@ function lista(){
         });
 }
 
+/* Nombre candidato/cant Votos*/
 let candidatos=[
 
     {nombre:"Miriam Bregman",
@@ -394,6 +402,7 @@ let candidatos=[
        },
 ]
 
+/* Resultados elecciones */
 function scrutinio(){
      ganador=candidatos[0];
      candidatos.forEach(element => {
@@ -403,6 +412,8 @@ function scrutinio(){
      });
 console.log("el ganador es :"+ganador.nombre);}
 
+
+/* Foreach if */
 function descuento(descuento){
         
     articulos.forEach(element => {
@@ -415,11 +426,13 @@ function descuento(descuento){
 
 }
 
+/* Cascaron */
 function descuentoAux(){
         des=parseInt(prompt("Ingrese valor descuento: "));
         descuento(des);
 }
 
+/*  foreach con if anidado */
 function venta(nom){
         articulos.forEach(element => {
                 if(element.nombre)
@@ -432,12 +445,13 @@ function venta(nom){
         });
 
 }
-
+/* ---cascaron---- */
 function ventaAux(){
         nombre=prompt("Ingrese producto: ");
         venta(nombre);
 }
 
+/* Lectura foreach */
 function stockActual(){
     console.log("Productos disponibles: ");
         articulos.forEach(element => {
@@ -448,18 +462,24 @@ function stockActual(){
         });
 }
 
+/* Generador contraseña aleatoria */
 function generarPass(){
         pass="";
+        //array caracteres permitidos
         caracteres=["a", "b", "c", "d", "e", "f","g", "h", "i", "j", "k", "l",
              "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", 
               "x", "y", "z","0","1","2","3","4","5","6","7","8","9","+",
               "@","#","!","?","¿","¡","!","º"];
         
             for(i=0;i<8;i++)
+
+                //Numero random entre (0,1) muliplicado por la longitud de arreglo todo eso lo rendeo y leo ese numero del array.
                 pass=pass+caracteres[Math.floor(Math.random() * caracteres.length)];
             console.log(pass);
 }
 
+
+/* Encuesta preguntas/respuestas */
 let preguntas=[
     
     {pregunta:"¿A o B?",
@@ -476,6 +496,7 @@ let preguntas=[
 
 ]
 
+/* foreach lectura arreglo  */
 function encuesta(){
    preguntas.forEach(element => {
         console.log(element.pregunta+" \nRespuesas 1: "+element.A+" \nRepuestas 2: "+element.B);
