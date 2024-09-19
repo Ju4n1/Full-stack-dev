@@ -322,24 +322,28 @@ let articulos=[
     
     {nombre:"fideos",
      precio:"$1000",
+     valor:1000,
      stock:10,
      comprado:false,
     },
     
     {nombre:"arroz",
      precio:"$3000",
+     valor:3000,
      stock:100,
      comprado:false,
     },
 
     {nombre:"salsa tomate",
     precio:"$4000",
+    valor:4000,
     stock:50,
     comprado:false,
     },
 
     {nombre:"azucar",
     precio:"$5000",
+    valor:5000,
     stock:0,
     comprado:false,
     },
@@ -398,3 +402,83 @@ function scrutinio(){
             ganador=element;
      });
 console.log("el ganador es :"+ganador.nombre);}
+
+function descuento(descuento){
+        
+    articulos.forEach(element => {
+            if(element.valor>=descuento)
+                {element.valor=element.valor-(element.valor*0.05);
+                 console.log("Precio actual: "+element.nombre+" con descuento: "+element.valor);}
+                 else console.log("el producto "+element.nombre+" no tien escuento");
+        
+    });
+
+}
+
+function descuentoAux(){
+        des=parseInt(prompt("Ingrese valor descuento: "));
+        descuento(des);
+}
+
+function venta(nom){
+        articulos.forEach(element => {
+                if(element.nombre)
+                    {element.stock--;
+                     if(element.stock<=10)
+                        {element.stock=100;
+                         console.log("Repuse stock "+element.nombre);
+                        }
+                    }
+        });
+
+}
+
+function ventaAux(){
+        nombre=prompt("Ingrese producto: ");
+        venta(nombre);
+}
+
+function stockActual(){
+    console.log("Productos disponibles: ");
+        articulos.forEach(element => {
+                    if(element.stock>0)
+                      console.log("                      "+element.nombre);
+                      
+                        
+        });
+}
+
+function generarPass(){
+        pass="";
+        caracteres=["a", "b", "c", "d", "e", "f","g", "h", "i", "j", "k", "l",
+             "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", 
+              "x", "y", "z","0","1","2","3","4","5","6","7","8","9","+",
+              "@","#","!","?","¿","¡","!","º"];
+        
+            for(i=0;i<8;i++)
+                pass=pass+caracteres[Math.floor(Math.random() * caracteres.length)];
+            console.log(pass);
+}
+
+let preguntas=[
+    
+    {pregunta:"¿A o B?",
+     A:10,
+     B:4,},
+
+    {pregunta:"¿C o B?",
+    A:1,
+    B:13,},
+    
+    {pregunta:"¿A o C?",
+    A:10,
+    B:4,},
+
+]
+
+function encuesta(){
+   preguntas.forEach(element => {
+        console.log(element.pregunta+" \nRespuesas 1: "+element.A+" \nRepuestas 2: "+element.B);
+   });
+
+}
