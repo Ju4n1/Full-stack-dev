@@ -473,7 +473,7 @@ function generarPass(){
         
             for(i=0;i<8;i++)
 
-                //Numero random entre (0,1) muliplicado por la longitud de arreglo todo eso lo rendeo y leo ese numero del array.
+                //numero radom redondeado con un maximo de longitud aray
                 pass=pass+caracteres[Math.floor(Math.random() * caracteres.length)];
             console.log(pass);
 }
@@ -482,7 +482,10 @@ function generarPass(){
 /* Encuesta preguntas/respuestas */
 let preguntas=[
     
+    //pregunta
     {pregunta:"¿A o B?",
+     
+    // Cantidad de respuestas, A y B
      A:10,
      B:4,},
 
