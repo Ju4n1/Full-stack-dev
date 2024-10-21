@@ -499,10 +499,21 @@ let preguntas=[
 
 ]
 
+
+
 /* foreach lectura arreglo  */
 function encuesta(){
    preguntas.forEach(element => {
         console.log(element.pregunta+" \nRespuesas 1: "+element.A+" \nRepuestas 2: "+element.B);
+        
+        
    });
-
+   
 }
+
+/**
+ * Declaro un oyente para el botón ejercicio 25 "btn-e25".
+ */
+document.getElementById("btn-e25").addEventListener("click",encuesta);
+
+
