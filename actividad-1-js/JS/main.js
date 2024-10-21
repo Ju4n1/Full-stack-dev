@@ -473,7 +473,7 @@ function generarPass(){
         
             for(i=0;i<8;i++)
 
-                //numero radom redondeado con un maximo de longitud aray
+                //Numero radom redondeado con un maximo de longitud aray
                 pass=pass+caracteres[Math.floor(Math.random() * caracteres.length)];
             console.log(pass);
 }
