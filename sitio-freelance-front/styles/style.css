@@ -34,7 +34,7 @@ body{
 }
 
 .contenedor{
-    width: 40rem;
+    max-width: 40rem;
     margin: 0 auto 0 auto; /* Repite el 0 en top y bot y el auto right left*/
 }
 
@@ -46,10 +46,26 @@ body{
 
 .navegacion-principal{
     display: flex;
-    justify-content: space-between; /* para aplicar en enlaces aplico flex desde el padre*/
+    flex-direction: column;
+}
+
+
+/* 768px tablet
+    480px telefono
+    1140px pc notebook
+    1400px más grande*/
+@media(min-width: 768px){
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between; /* para aplicar en enlaces aplico flex desde el padre*/
+
+    }
+   
 }
 
 .navegacion-principal a{
+    display: block;
+    text-align: center;
     color: var(--blanco);
     padding: 1rem;
     text-decoration: none;
@@ -61,3 +77,4 @@ body{
     background-color: var(--primario);
     color: var(--oscuro);
 }
+
