@@ -88,5 +88,26 @@ body{
 .hero{
     background-image: url(/sitio-freelance-front/images/nav.jpg);
     background-size: cover;
-    padding: 20px;
+    height: 450px;
+    position: relative;
+   
+
+.contenido-hero{
+    position:absolute;
+    background-color: rgba(0,0,0,.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero h2,
+.contenido-hero p{
+    color: var(--blanco);
+}
+.ubi{
+    display: flex;
+    align-items:flex-start;
 }
