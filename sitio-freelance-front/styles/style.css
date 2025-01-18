@@ -19,7 +19,7 @@ head{
 /** 1 rem=10px  **/
 body{
     font-size: 16px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*Aplica a toda la pagina*/
 }
 
 .titulo{
@@ -31,4 +31,26 @@ body{
 .titulo span{
     font-size: 2rem;
    
+}
+
+.contenedor{
+    width: 40rem;
+    margin: 0 auto 0 auto; /* Repite el 0 en top y bot y el auto right left*/
+}
+
+.nv-bg{
+    background-color: var(--secundario);
+
+}
+
+
+.navegacion-principal{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between; /* para aplicar en enlaces aplico flex desde el padre*/
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;
 }
