@@ -5,12 +5,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Web freelance</title>
+     
+        <link rel="preload" href="styles/normalie.css"> <!--Hace mas eficiente la carga-->
+        <link rel="preload" href="styles/style.css">
+
+        <link rel="stylesheet" href="styles/normalie.css"> <!--Las librerias van pimero-->
+        <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
 
         <header>
-                <h1>Juani web free</h1> <!--un solo H1 por archiv html. -->
+                <h1 class="titulo">Juani 
+                      <span>web free</span>
+                </h1> <!--un solo H1 por archiv html. -->
         </header>
 
         <nav><!--<ul> para menu multiple-->
@@ -24,7 +32,9 @@
         </nav>
 
         <section><!--hijo es un heading que no escontenido principal. -->
-                <h2>Diseño web freelance</h2>
+                <h2 class="titulo">Diseño 
+                        <span>web freelance</span>
+                </h2>
                 <p>Buenos Aires-Pigüé</p>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                         stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
@@ -110,7 +120,7 @@
         </section>
 
         <footer>
-                <p>Derechos reservado Juan C.F. freelance</p>
+                <p>Derechos reservados Juan C.F. freelance</p>
         </footer>
 
 </body>
