@@ -11,11 +11,13 @@
 }
 
 
-
-/** Para usar rem en font size **/
+/*Global*/
 html{
-    font-size: 62.5%;
-    box-sizing: border-box;
+    font-size: 62.5%;/** Para usar rem en font size **/
+    box-sizing: border-box;/* hack box model*/
+    scroll-snap-type: y mandatory ;
+
+
 }
 /*tamaño border box*/
 *, *:before, *:after {
@@ -144,6 +146,11 @@ body{
     align-items:flex-start;
 }
 
+.servicios ,.navegacion-principal, .formulario{
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+}
+
 @media(min-width: 780px){
             .servicios{
                 display: grid;
@@ -178,3 +185,36 @@ body{
 
 }
 
+.formulario{
+        background-color: var(--gris);
+        width: min(50rem,100%);
+        margin: 0 auto;
+        padding: 2rem;
+        border-radius: 1rem;
+}
+.formulario fieldset{
+    border: none;
+   
+}
+
+.formulario legend{
+        text-align: center;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        color: var(--primario);
+}
+
+.contenedor-campos{}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
