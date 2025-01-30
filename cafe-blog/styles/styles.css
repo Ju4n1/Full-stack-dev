@@ -34,6 +34,7 @@ a{
 
 h1,h2,h3,h4{
     font-family: var(--fuenteHeading);
+    line-height: 1.2;
 }
 
 h1{
@@ -51,7 +52,7 @@ h3{
 }
 
 
-h1{
+h4{
     font-size: 2.8rem;
 }
 
@@ -87,9 +88,51 @@ img{
 }
 
 @media(min-width: 768px){
-    .contenido-principal{
+    .header__texto{
+        margin-top: 15rem;
+    }
+   
+}
+
+@media(min-width: 768px){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo{
+    color: var(--blanco);
+}
+
+.logo__nombre{
+    font-weight: 400;
+}
+
+.logo__bold{
+    font-weight: 700;
+}
+
+@media(min-width: 768px){
+     .navegacion{
+        display: flex;
+        gap: 2rem;
+     }
+   
+}
+
+.navegacion__enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
+
+@media(min-width: 768px){
+    .contenido--principal{
         display: grid;
-        grid-template-columns: (2fr,1fr);
+       grid-template-columns: 2fr 1fr;
         column-gap: 4rem;
     }
    
@@ -127,3 +170,36 @@ img{
 .boton--primario{
     background-color: var(--negro);
 }
+
+.boton--secundario{
+    background-color: var(--primario);
+}
+
+.cursos{
+    list-style: none;
+}
+
+.widget-curso{
+    border-bottom: solid 1px var(--gris);
+    margin-bottom: 2rem;
+}
+
+.widget-curso:last-of-type{
+    border:none;
+    margin-bottom:0;
+}
+
+.widget-curso__label{
+   font-family: var(--fuenteHeading);
+   font-weight: bold;
+}
+
+.widget-curso__info{
+    font-family: normal;
+
+}
+.widget-curso__label,
+.widget-curso__info{
+    font-size: 2rem;
+}
+
