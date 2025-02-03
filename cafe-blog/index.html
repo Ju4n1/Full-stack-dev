@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Block-Cafe</title>
+  
+    <!--Prefetch 
+    descarga nosotros previamente para que cargue más rapido-->
+    <link rel="prefetch" href="nosotros.html"ass="document">
+  
+  
+    <!--Preload mejora la carga inmediata-->
+    <link rel="preload" href="/styles/normalice.css" as="styles">
     <link rel="stylesheet" href="/styles/normalice.css">
+
+
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
@@ -38,10 +49,12 @@
                     <h3>Nuestro blog</h3>
                     <article class="entrada">
                             <div class="entrada__imagen">
-                                    <img src="/img/blog1.jpg" alt="blog uno">
+                                        <!-- "loadind=lazy" mejora el rendimiento cargando 
+                                              elementos sol oal ser visibles por el usuario.-->
+                                        <img loading="lazy" src="/img/blog1.jpg" alt="blog uno">
                             </div>
 
-                            <div class="enrada__contenido">
+                            <div class="entrada__contenido">
                                     <h4 class="no--margin">Tipos de granos de cafe</h4>
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sequi consequatur ex dicta dolorem labore voluptate, tenetur dolores blanditiis neque laborum magnam quae vel sapiente error molestias, reiciendis tempora quos.</p>
                                     <a href="entrada.html" class="boton boton--primario">Leer entrada</a>
@@ -51,10 +64,10 @@
 
                     <article class="entrada">
                         <div class="entrada__imagen">
-                                <img src="/img/blog2.jpg" alt="blog uno">
+                                <img loading="lazy" src="/img/blog2.jpg" alt="blog uno">
                         </div>
 
-                        <div class="enrada__contenido">
+                        <div class="entrada__contenido">
                                 <h4 class="no--margin">Resetas de cafe</h4>
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sequi consequatur ex dicta dolorem labore voluptate, tenetur dolores blanditiis neque laborum magnam quae vel sapiente error molestias, reiciendis tempora quos.</p>
                                 <a href="entrada.html" class="boton boton--primario">Leer entrada</a>
@@ -64,10 +77,10 @@
 
                     <article class="entrada">
                         <div class="entrada__imagen">
-                                <img src="/img/blog3.jpg" alt="blog uno">
+                                <img loading="lazy" src="/img/blog3.jpg" alt="blog uno">
                         </div>
 
-                        <div class="enrada__contenido">
+                        <div class="entrada__contenido">
                                 <h4 class="no--margin">Beneficios del cafe</h4>
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, sequi consequatur ex dicta dolorem labore voluptate, tenetur dolores blanditiis neque laborum magnam quae vel sapiente error molestias, reiciendis tempora quos.</p>
                                 <a href="entrada.html" class="boton boton--primario">Leer entrada</a>
