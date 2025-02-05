@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Block-Cafe</title>
+    <meta name="description" content="Página de blo de café">
   
     <!--Prefetch 
     descarga nosotros previamente para que cargue más rapido-->
@@ -49,9 +50,18 @@
                     <h3>Nuestro blog</h3>
                     <article class="entrada">
                             <div class="entrada__imagen">
-                                        <!-- "loadind=lazy" mejora el rendimiento cargando 
-                                              elementos sol oal ser visibles por el usuario.-->
-                                        <img loading="lazy" src="/img/blog1.jpg" alt="blog uno">
+                                        <picture>
+
+                                                <!--Usa imagen WEBP s es soportado-->
+                                                <source srcset="img/blog1" type="image/webp">
+
+                                                <!-- "loadind=lazy" mejora el rendimiento cargando 
+                                                elementos sol oal ser visibles por el usuario.-->
+                                                <img loading="lazy" src="/img/blog1.jpg" alt="blog uno">
+
+                                        </picture>
+                                
+                                        
                             </div>
 
                             <div class="entrada__contenido">
@@ -103,7 +113,7 @@
                                         <p class="widget-curso__label">Cupo:
                                                 <span class="widget-curso__info">20</span>
                                         </p>
-                                        <a href="entrada.html" class="boton boton--secundario">Más información</a>
+                                        <a href="entrada.html" class="boton boton--secundario">Más información sobre los cursos</a>
 
                                 </li>
 
@@ -115,7 +125,7 @@
                                         <p class="widget-curso__label">Cupo:
                                                 <span class="widget-curso__info">20</span>
                                         </p>
-                                        <a href="entrada.html" class="boton boton--secundario">Más información</a>
+                                        <a href="entrada.html" class="boton boton--secundario">Más información obre los cursos</a>
 
                                 </li>
                                 
@@ -139,5 +149,7 @@
                         </div>
                 </div>
        </footer>
+       <!--Exportar libreria  JS-->
+       <script src="js/modernizr.js"></script>
 </body>
 </html>
