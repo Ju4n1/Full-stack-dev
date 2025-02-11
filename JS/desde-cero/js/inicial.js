@@ -57,6 +57,10 @@ const producto={
     nombreProducto:"Monitor",
     precio:200,
     disponible:true,
+    info:function(){
+        console.log(`El producto ${this.nombreProducto} tiene un precio ${this.precio}`);
+    }
+
 
 }
 
@@ -162,7 +166,7 @@ const reproductor={
 reproductor.reproducir("Alamafuerte");
 reproductor.pausar();
 */
-
+/*
 //Arrow funtion.
 const sumar=(n1,n2)=>{
     console.log(n1+n2);
@@ -185,3 +189,25 @@ switch(metodoPago){
     console.log('Uso mecado pago');
     break;
 }
+
+for(let i=0; i<10;i++){
+    console.log(i);
+}
+let i=0;
+while(i<10){
+    console.log(i);
+    i++;
+}
+i=0;
+do{
+    console.log(i);
+    i++;
+}while(i<10);
+
+*/
+
+//arreglo.forEach(elem=> console.log(elem));//Iterar o mostrar en consola.
+
+//const arreglo3=arreglo.map(elem=> console.log(elem)); //map equivalente a foreacaH, para cRear un nuvo arreglo.
+
+producto.info();
