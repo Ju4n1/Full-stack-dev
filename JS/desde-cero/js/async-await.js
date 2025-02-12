@@ -27,12 +27,14 @@ function descargarUltimosPedidos(){
 
 async function app(){
    try {
+        //Tarda 5s + 3s = 8s    
         // const clientes= await descargarNuevosClientes();
         // const pedidos=await descargarUltimosPedidos();
         // //Este código depende del llamado de arriba "await" para ejecutarse.
         // console.log(clientes);
         // console.log(pedidos);
 
+        //Mejora el perfonmanse terminando una en 3s y la otra en 5s en paralelo.
         const resulado=await Promise.all([descargarNuevosClientes(),descargarUltimosPedidos()]);
         console.log(resulado[0]);
         console.log(resulado[1]);
