@@ -67,3 +67,14 @@ console.log(produ.formato());
 console.log(prodd.formato());
 console.log(lib.formato());
 
+//--------------Try-Catch---------------------------
+
+
+console.log("Antes eror");
+
+try{
+    console.log(crasheo);}
+catch(error){
+    console.log(error);}
+
+console.log("Sigue depues eror");
