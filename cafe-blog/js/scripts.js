@@ -35,3 +35,42 @@ nuevoEnlace.classList.add("navegacion__enlace");
 const nav =document.querySelector(".navegacion");
 
 nav.appendChild(nuevoEnlace);
+
+//Eventos
+
+console.log("1");
+
+//Window es más quedocument, load espera que todo el archivo este listo para ejcutar
+//function, descargue html,css,imagenes.
+window.addEventListener("load",function(){
+                    console.log("2");
+});
+
+//Equivalente alcodigo anterior.
+window.onload=function(){
+        console.log("3");
+}
+//Solamente espera que  se descargue el html
+document.addEventListener("DOMContentLoaded",function(){
+                console.log("4");
+});
+
+console.log("5");
+
+//Otro ejeplo evento scroll.
+window.onscroll=function(){
+     console.log("scrolling");
+}
+
+
+//Seleccionar un elemento y asociarle un evento.
+
+const btnEnviar=document.querySelector(".boton--primario");
+
+btnEnviar.addEventListener("click",function(evento){
+            console.log("click");
+            evento.preventDefault();
+            //Validar formulario
+            //...
+            console.log("Datos cargados");
+});
