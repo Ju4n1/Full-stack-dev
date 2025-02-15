@@ -38,6 +38,7 @@ nav.appendChild(nuevoEnlace);
 
 //Eventos
 
+/*
 console.log("1");
 
 //Window es más quedocument, load espera que todo el archivo este listo para ejcutar
@@ -62,15 +63,48 @@ window.onscroll=function(){
      console.log("scrolling");
 }
 
+*/
 
 //Seleccionar un elemento y asociarle un evento.
-
+/*
 const btnEnviar=document.querySelector(".boton--primario");
 
 btnEnviar.addEventListener("click",function(evento){
             console.log("click");
-            evento.preventDefault();
+            evento.preventDefault();//Util forularios.
             //Validar formulario
             //...
-            console.log("Datos cargados");
+            console.log("enviando formulario");
+});*/
+
+
+
+/**Capturar texto y validar. */
+
+const datos={
+        nombre:"",
+        email:"",
+        mensaje:""
+}
+
+const nombre=document.querySelector("#nombre");
+const email=document.querySelector("#email");
+const mensaje=document.querySelector("#mensaje");
+
+nombre.addEventListener("input",leerTexto);
+email.addEventListener("input",leerTexto);
+mensaje.addEventListener("input",leerTexto);
+
+function leerTexto(e){
+        datos[e.target.id]=e.target.value;
+        console.log(e.target.value);
+        console.log(datos);
+}
+
+
+const formulario=document.querySelector(".formulario");
+formulario.addEventListener("submit",function(e){
+        e.preventDefault();
+        //Validar formulario.
 });
+
