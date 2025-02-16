@@ -268,6 +268,21 @@ img{
      font-size: 2rem;
  }
 
+.error{
+    background-color: rgb(185, 0,0);
+    text-align: center;
+    padding: 1rem;
+    color:var(--blanco);
+    text-transform: uppercase;}
+
+.correcto{
+    background-color: rgb(23, 53, 4);
+    text-align: center;
+    padding: 1rem;
+    color:var(--blanco);
+    text-transform: uppercase;
+}
+
  .contacto-bg{
     background-image: url(/img/contacto.jpg);
     height: 40rem;
